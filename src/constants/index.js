@@ -38,37 +38,37 @@ const navIcons = [
     const dockApps = [
     {
         id: "finder",
-        name: "Portfolio", // was "Finder"
+        name: "Portfolio", 
         icon: "finder.png",
         canOpen: true,
     },
     {
         id: "safari",
-        name: "Articles", // was "Safari"
+        name: "Articles", 
         icon: "safari.png",
         canOpen: true,
     },
     {
         id: "photos",
-        name: "Gallery", // was "Photos"
+        name: "Gallery", 
         icon: "photos.png",
         canOpen: true,
     },
     {
         id: "contact",
-        name: "Contact", // or "Get in touch"
+        name: "Contact", 
         icon: "contact.png",
         canOpen: true,
     },
     {
         id: "terminal",
-        name: "Skills", // was "Terminal"
+        name: "Skills", 
         icon: "terminal.png",
         canOpen: true,
     },
     {
         id: "trash",
-        name: "Archive", // was "Trash"
+        name: "Archive", 
         icon: "trash.png",
         canOpen: false,
     },
@@ -101,25 +101,22 @@ const navIcons = [
 
     const techStack = [
     {
-        category: "Frontend",
-        items: ["React.js", "Next.js", "TypeScript"],
+        category: "Languages",
+        items: ["Java", "Python", "SQL"],
     },
     {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
-    },
-    {
-        category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
-    },
-    {
-        category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        category: "Artificial Inteligence",
+        items: ["LangChain","PEFT (LoRA)", "PyTorch"],
     },
     {
         category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        items: ["Vector DBs", "MongoDB", "PostgreSQL"],
     },
+    {
+        category: "Backend & Frontend",
+        items: ["FastAPI", "Reactjs"],
+    },
+    
     {
         category: "Dev Tools",
         items: ["Git", "GitHub", "Docker"],

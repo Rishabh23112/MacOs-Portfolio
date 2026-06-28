@@ -1,12 +1,29 @@
+import Dock from "#components/Dock"
 import Home from "#components/Home"
 import Navbar from "#components/Navbar"
+import Terminal from "./window/Terminal";
+import gsap from "gsap";
+
+import { Draggable } from "gsap/Draggable";
+
+gsap.registerPlugin(Draggable)
+
 
 const App = () => {
   return (
-    <main>
-      <Navbar/>
-      <Home/>
-    </main>
+    <>
+      <video className="bg-video" autoPlay muted loop playsInline>
+        <source src="/video/Earth2.mp4" type="video/mp4" />
+      </video>
+
+      <main>
+        <Navbar />
+        <Home />
+        <Dock/>
+
+        <Terminal/>
+      </main>
+    </>
   )
 }
 
