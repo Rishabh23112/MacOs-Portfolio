@@ -1,6 +1,8 @@
 import Dock from "#components/Dock"
 import Home from "#components/Home"
 import Navbar from "#components/Navbar"
+import Resume  from "./window/Resume";
+import Safari from "./window/Safari";
 import Terminal from "./window/Terminal";
 import gsap from "gsap";
 
@@ -22,6 +24,8 @@ const App = () => {
         <Dock/>
 
         <Terminal/>
+        <Safari/>
+        <Resume/>
       </main>
     </>
   )
