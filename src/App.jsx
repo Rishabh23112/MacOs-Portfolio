@@ -1,6 +1,7 @@
 import Dock from "#components/Dock"
 import Home from "#components/Home"
 import Navbar from "#components/Navbar"
+import Finder from "./window/Finder";
 import Resume  from "./window/Resume";
 import Safari from "./window/Safari";
 import Terminal from "./window/Terminal";
@@ -26,6 +27,7 @@ const App = () => {
         <Terminal/>
         <Safari/>
         <Resume/>
+        <Finder/>
       </main>
     </>
   )
