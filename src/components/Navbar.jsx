@@ -29,6 +29,7 @@ const Navbar = () => {
             opacity: 1,
             duration: 0.4,
             ease: "power3.out",
+            overwrite:true
         })
     }
 
@@ -39,12 +40,13 @@ const Navbar = () => {
                 opacity: 0,
                 duration: 0.3,
                 ease: "power2.inOut",
+                overwrite:true
             })
         }
     }
 
     return (
-        <nav ref={navRef} className="fixed top-2 left-2 right-2 rounded-2xl bg-white/50 backdrop-blur-3xl p-2 px-5 select-none opacity-80 z-50 flex justify-between items-center shadow-sm ">
+        <nav ref={navRef} onMouseLeave={handleMouseLeave} className="fixed top-2 left-2 right-2 rounded-2xl bg-white/50 backdrop-blur-3xl p-2 px-5 select-none opacity-80 z-50 flex justify-between items-center shadow-sm ">
             
             <div 
                 ref={pillRef} 

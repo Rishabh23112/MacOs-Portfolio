@@ -391,9 +391,16 @@ body {
                     @apply group-hover:bg-gray-950/10 p-1 rounded-md;
                 }
 
-                p {
-                    @apply text-sm text-white text-center px-1 rounded-md group-hover:bg-blue-500 transition-colors max-w-40;
-                }
+                                p {
+                                    @apply text-sm text-white text-center px-2 py-0.5 rounded-md border border-transparent transition-all duration-300 max-w-40;
+                                }
+                
+                                &:hover p {
+                                    @apply bg-white/20 border-white/30 text-white;
+                                    backdrop-filter: blur(16px);
+                                    -webkit-backdrop-filter: blur(16px);
+                                    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+                                }
             }
         }
     }
